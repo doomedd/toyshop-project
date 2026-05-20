@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* Шапка */
+.header {
+    background: #222;
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00d4ff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+.user {
+    color: #ccc;
+    margin-left: 10px;
+}
+
+/* Головна кнопка */
+.btn-main {
+    display: inline-block;
+    background: #00aaff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-main:hover {
+    background: #0088cc;
+}
+
+/* Картки товарів */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.product-card.big {
+    width: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product-card h3,
+.product-card h2 {
+    margin-top: 0;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #00aaff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    background: #0088cc;
+}
+
+/* Форми */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background: #00aaff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0088cc;
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #eee;
+}
+
+/* Кнопки маленькі */
+.btn-small {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #00aaff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-small:hover {
+    background: #0088cc;
+}
+
+.btn-small.danger {
+    background: #e74c3c;
+}
+
+.btn-small.danger:hover {
+    background: #c0392b;
+}
+
+/* Повідомлення */
+.msg {
+    padding: 10px;
+    background: #e0f7ff;
+    border-left: 4px solid #00aaff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.msg.error {
+    background: #ffe0e0;
+    border-left-color: #e74c3c;
+}
+
+/* Авторизація/реєстрація */
+.auth {
+    max-width: 400px;
+}
+
+/* Адмін‑меню */
+.admin-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-menu li {
+    margin-bottom: 10px;
+}
+
+.admin-menu a {
+    text-decoration: none;
+    color: #00aaff;
+}
+
+.admin-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Фільтр */
+.filter-form {
+    margin-bottom: 20px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
